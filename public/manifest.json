@@ -1,0 +1,17 @@
+{
+  "name": "Tú Anh Xinh Gái | Nhãn In",
+  "short_name": "Tú Anh",
+  "description": "Ứng dụng in nhãn chuyên nghiệp cho Tú Anh",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -42,8 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
         with:
-          tagName: v0.1.1
-          releaseName: "Tú Anh Xinh Gái v0.1.1"
-          releaseBody: "Bản cài đặt Desktop chính thức cho Tú Anh Xinh Gái. Tải tệp .msi hoặc .exe bên dưới."
+          tagName: tuanh-app-v0.1.2
+          releaseName: "Tú Anh App v0.1.2"
           releaseDraft: true
           prerelease: false

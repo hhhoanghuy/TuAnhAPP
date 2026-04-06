@@ -1,8 +1,8 @@
 {
-  "name": "tu-anh-xinh-gai",
+  "name": "tu-anh-app",
   "productName": "Tú Anh Xinh Gái",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
