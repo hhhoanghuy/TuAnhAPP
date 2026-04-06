@@ -35,16 +35,11 @@ jobs:
       - name: install frontend dependencies
         run: npm install
 
-      - name: ensure logo exists (with fallback)
+      - name: ensure fallback icon exists
         run: |
-          mkdir -p public
-          if [ ! -f public/logo.png ] || [ $(stat -c%s "public/logo.png") -lt 100 ]; then
-            curl -L https://raw.githubusercontent.com/tauri-apps/tauri/dev/app-icon.png -o public/logo.png
-          fi
+          mkdir -p src-tauri/icons
+          curl -L https://raw.githubusercontent.com/tauri-apps/tauri/dev/app-icon.png -o src-tauri/icons/32x32.png
         shell: bash
-
-      - name: generate icons on-the-fly
-        run: npx tauri icon public/logo.png --out src-tauri/icons
 
       - uses: tauri-apps/tauri-action@v0
         env:
