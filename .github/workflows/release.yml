@@ -21,7 +21,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
@@ -43,6 +43,8 @@ jobs:
         shell: bash
 
       - name: build frontend web assets
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
         run: npm run build
 
       - uses: tauri-apps/tauri-action@v0
