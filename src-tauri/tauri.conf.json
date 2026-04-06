@@ -70,10 +70,11 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 800,
         "resizable": true,
-        "title": "BatchDoc | Word Batch Generator",
-        "width": 1200
+        "title": "Tú Anh Xinh Gái | Đáng yêu",
+        "width": 1200,
+        "height": 800,
+        "center": true
       }
     ]
   }
