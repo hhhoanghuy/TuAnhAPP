@@ -50,8 +50,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
         with:
-          tagName: v__VERSION__ # tauri-action replaces this with the app version
-          releaseName: "Tú Anh Xinh Gái v__VERSION__"
+          tagName: v0.1.1
+          releaseName: "Tú Anh Xinh Gái v0.1.1"
           releaseBody: "Bản cài đặt Desktop chính thức cho Tú Anh Xinh Gái. Tải tệp .msi hoặc .exe bên dưới."
           releaseDraft: true
           prerelease: false

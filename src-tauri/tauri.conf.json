@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "BatchDoc",
-    "version": "0.1.0"
+    "productName": "Tú Anh Xinh Gái",
+    "version": "0.1.1"
   },
   "tauri": {
     "allowlist": {
@@ -40,7 +40,7 @@
         "icons/32x32.png",
         "icons/icon.ico"
       ],
-      "identifier": "com.tuanh.app",
+      "identifier": "com.tuanh.labelstudio",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
