@@ -37,9 +37,10 @@
       },
       "externalBin": [],
       "icon": [
-        "icons/32x32.png"
+        "icons/32x32.png",
+        "icons/icon.ico"
       ],
-      "identifier": "com.batchdoc.app",
+      "identifier": "com.tuanh.app",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

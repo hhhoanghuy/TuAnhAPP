@@ -35,10 +35,11 @@ jobs:
       - name: install frontend dependencies
         run: npm install
 
-      - name: ensure fallback icon exists
+      - name: ensure fallback icons exist
         run: |
           mkdir -p src-tauri/icons
-          curl -L https://raw.githubusercontent.com/tauri-apps/tauri/dev/app-icon.png -o src-tauri/icons/32x32.png
+          curl -L https://raw.githubusercontent.com/tauri-apps/tauri/dev/tooling/cli/templates/app/src-tauri/icons/32x32.png -o src-tauri/icons/32x32.png
+          curl -L https://raw.githubusercontent.com/tauri-apps/tauri/dev/tooling/cli/templates/app/src-tauri/icons/icon.ico -o src-tauri/icons/icon.ico
         shell: bash
 
       - uses: tauri-apps/tauri-action@v0
