@@ -42,6 +42,9 @@ jobs:
           curl -L https://raw.githubusercontent.com/tauri-apps/tauri/dev/tooling/cli/templates/app/src-tauri/icons/icon.ico -o src-tauri/icons/icon.ico
         shell: bash
 
+      - name: build frontend web assets
+        run: npm run build
+
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
